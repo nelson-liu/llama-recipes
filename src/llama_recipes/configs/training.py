@@ -39,3 +39,5 @@ class train_config:
     save_optimizer: bool=False # will be used if using FSDP
     use_fast_kernels: bool = False # Enable using SDPA from PyTroch Accelerated Transformers, make use Flash Attention and Xformer memory-efficient kernels
     save_metrics: bool = False # saves training metrics to a json file for later plotting
+    use_cosine_scheduler: bool = False
+    warmup_steps: int = 0 # will be used if using cosing scheduler
